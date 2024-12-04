@@ -1,0 +1,221 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header, footer {
+    background-color: purple;
+    text-align: center;
+    padding: 1rem 0;
+   
+  }
+
+  header {
+    position: sticky; /* Make navbar sticky */
+    top: 0; /* Stick to the top of the viewport */
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1 1rem;
+    font-size: 20px;
+
+    
+    
+  }
+  
+  .header-container img {
+    width: auto;
+    height: 100px;
+    margin-right: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: rgb(255, 252, 252);
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 14px;
+  }
+  
+  nav a:hover {
+    color: black
+  }
+  
+  /* Hero Section */
+  #hero {
+    background-image: linear-gradient(
+        rgba(242, 63, 254, 0.5),
+        rgba(16, 16, 16, 0.5)
+    );
+    background-color: #000000;
+    text-align: left;
+    padding: 10rem;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #hero img {
+    width: auto;
+    height: 400px;
+  }
+  
+  #hero h1 {
+    font-size: 35px;
+    color: plum;
+
+    }
+
+ #hero text-container {
+    padding-right: 400px;
+ }
+  
+#hero h2 {
+  font-size: 60px;
+  padding-left:0px;
+  color: rgb(237, 24, 237);
+  }
+  
+  #hero p {
+    font-size: 25px;
+    color: plum;
+  }
+  
+  /* About Section */
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 600px;
+    background-color: #e1b5e8;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  #about img {
+    width: 150px;
+    height: auto;
+    align-items: right;
+    border-radius: 50%;
+    border: 3px solid purple;
+    
+  }
+  
+  #about h2 {
+    font-size: 40px;
+    color: #ffffff;
+    align-items: center;
+  }
+  
+  #about p{
+    font-size: 24px ;
+  }
+  
+  
+  /* Skills Section */
+  #skills {
+    text-align: center;
+    height: 640px;
+    background-color: #d5b2dc;
+
+  }
+  
+  #skills h2 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    padding-top: 180px;
+  }
+
+  #skills p {
+    font-size: 26px;
+
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 2rem 1rem;
+    text-align: center;
+    height: 600px;
+  }
+  
+  #contact h2 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    padding-top: 150px;
+  }
+  
+  .social-icons {
+    margin-left: 200px; /* Default for desktop */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+}
+
+.social-icons p {
+    padding-top: 20px;
+    font-size: 20px;
+    padding-right: 150px; /* Default for desktop */
+}
+
+.social-icons a {
+    font-size: 2rem;
+    color: purple;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: black;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .social-icons {
+        flex-direction: column; /* Stack icons vertically */
+        margin-left: 0; /* Remove large margin on mobile */
+        gap: 0.5rem; /* Reduce gap between items */
+        align-items: center; /* Center align the content */
+    }
+
+    .social-icons p {
+        padding-top: 10px; /* Adjust spacing for smaller screens */
+        font-size: 16px; /* Reduce font size */
+        padding-right: 0; /* Remove unnecessary right padding */
+        text-align: center; /* Center text on mobile */
+    }
+
+    .social-icons a {
+        font-size: 1.5rem; /* Adjust icon size for mobile */
+    }
+}
+
+  
+  /* Footer */
+  footer {
+    margin-top: 2rem;
+  }
+
+  

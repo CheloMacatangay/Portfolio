@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills & Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="text-container">
+        <h1>Hello, I'm</h1>
+        <h2>CHELO</h2>
+        <p>Your one-stop destination to learn more.</p>
+    </div>
+    <img src="profile2.png" >
+  </section>
+  <section id="about">
+    <div class="about-container">
+      <img src="profile.png" alt="Profile Image">
+      <div>
+        <h2 style="color: purple;">About Me</h2>
+        <br>
+        <p>Hello! I am a professional web designer and developer <br>
+            with a passion for web design. I enjoy developing simple <br> and clean website that  provide real value to the user.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 style="color: purple;">Skills & Work Experience</h2>
+    <p><strong>Skills:</strong> HTML, CSS, JavaScript, Python, and more.</p>
+    <p><strong>Work Experience:</strong>Freelance Developer.</p>
+  </section>
+
+  <section id="contact">
+    <h2 style="color: purple;">Contact Me</h2> <br>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/_chellyace/profilecard/?igsh=M255c21meG11eTZq" target="_blank" aria-label="Instagram">
+        <i class="fab fa-2x fa-instagram"></i>
+      </a>
+      <a href="https://www.instagram.com/_chellyace/profilecard/?igsh=M255c21meG11eTZq" target="_blank" aria-label="Instagram"><p>_chellyace</p></a>
+      <a href="https://www.facebook.com/chelo.macatangay.10" target="_blank" aria-label="Messenger">
+        <i class="fab fa-2x fa-facebook-messenger"></i>
+      </a>
+      <a href="https://www.facebook.com/chelo.macatangay.10" target="_blank" aria-label="Messenger"><p>Chelo Macatangay</p></a>
+      <a href="https://telegram.org" target="_blank" aria-label="Telegram">
+        <i class="fab fa-2x fa-telegram-plane"></i>
+      </a>
+      <a href="https://telegram.org" target="_blank" aria-label="Telegram"><p>0966-941-2423</p></a>
+      
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript for Hamburger Menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show'); // Toggle visibility of nav links
+      hamburger.classList.toggle('active'); // Toggle hamburger animation (optional)
+    });
+  </script>
+
+</body>
+</html>
